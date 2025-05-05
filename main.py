@@ -43,12 +43,8 @@ registered_users = {
 
 sep_line = ("-" * 40)
 
-#print("username:", end="")
 user = input("username:")
-#print(user)
-#print("password:", end="")
 pwd = input("password:")
-#print(pwd)
 print(sep_line)
 
 allow_user = user in registered_users and registered_users[user] == pwd
@@ -61,9 +57,9 @@ print("Welcome to the app,", user)
 print(f"We have {len(TEXTS)} texts to be analyzed.")
 print(sep_line)
 
-print("Enter a number btw. 1 and 3 to select: ", end="")
+
 selected_text_no = input("Enter a number btw. 1 and 3 to select: ")
-print(selected_text_no)
+
 print(sep_line)
 
 selection_ok = selected_text_no in ("1", "2", "3")
