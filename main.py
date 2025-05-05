@@ -106,4 +106,8 @@ max_len = max(words_len.values())
 occurences_len = max(len("  OCCURENCES  "), max_len + 2)
 print(f"LEN|{"OCCURENCES".center(occurences_len)}|NR.")
 for delka in range(1, max(words_len) + 1):
-    print(f"{str(delka).rjust(3)}|{("*" * words_len.setdefault(delka, 0)).ljust(occurences_len)}|{words_len.setdefault(delka, 0)}")
+    print(
+        f"{str(delka).rjust(3)}|"
+        f"{("*" * words_len.setdefault(delka, 0)).ljust(occurences_len)}|"
+        f"{words_len.setdefault(delka, 0)}"
+    )
