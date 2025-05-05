@@ -50,7 +50,6 @@ print(sep_line)
 allow_user = user in registered_users and registered_users[user] == pwd
 
 if not allow_user:
-    print("unregistered user, terminating the program..")
     sys.exit("unregistered user, terminating the program..")
 
 print("Welcome to the app,", user)
@@ -65,7 +64,6 @@ print(sep_line)
 selection_ok = selected_text_no in ("1", "2", "3")
 
 if not selection_ok:
-    print("Number btw. 1 and 3 should have been selected, terminating the program..")
     sys.exit("Number btw. 1 and 3 should have been selected, terminating the program..")
 
 selected_text = TEXTS[int(selected_text_no) - 1]
